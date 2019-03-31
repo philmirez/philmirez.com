@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import SEO from "core/seo";
 import Layout from "layout/layout";
-import { Content, ListColor, Card, Stack } from "layout/style";
+import { ListColor, Card, Stack } from "layout/style";
 import { Gallery } from "layout/style";
 import { Parallax } from "molecules/parallax/parallax";
 import Resume from "molecules/table/resume";

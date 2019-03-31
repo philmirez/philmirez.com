@@ -4,7 +4,7 @@
   "description": "A portfolio site for Phil Ramirez.",
   "version": "0.1.0",
   "dependencies": {
-    "@auth0/cosmos": "^0.19.0",
+    "@auth0/cosmos": "auth0/cosmos#1456-fix-ssr",
     "babel-plugin-styled-components": "^1.10.0",
     "css-customs-loader": "^0.2.3",
     "gatsby": "^2.0.76",

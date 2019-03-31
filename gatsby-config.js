@@ -1,16 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Test drive`,
-    test: `testing`,
-    description: `Taking gatsby for a test drive.`,
+    title: `philmirez.com`,
+    description: `Personal site for Phil Ramirez`,
     name: `Phil Ramirez`,
-    author: `@ramirezp6856`
+    author: `@philmirez`
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/markdown`,
         name: "markdown-pages"
       }
     },
@@ -32,8 +31,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1B2B34`,
+        theme_color: `#1B2B34`,
         display: `minimal-ui`,
         icon: `src/images/logo.png` // This path is relative to the root of the site.
       }

@@ -17,12 +17,6 @@ const Page = styled.div`
   color: ${props => props.theme.color.white.secondary};
 `;
 
-const Content = styled(PageLayout.Content)`
-  margin-top: -2.8em;
-  width: 100%;
-  background-color: ${props => props.theme.color.darkGray.primary};
-`;
-
 const Stack = styled(StackLayout)`
   height: 100%;
   width: 100%;
@@ -68,4 +62,4 @@ const Card = styled(posed.div(cardProps))`
   }
 `;
 
-export { Page, Content, Stack, Row, ListColor, Card, Gallery };
+export { Page, Stack, Row, ListColor, Card, Gallery };

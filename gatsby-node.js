@@ -6,8 +6,8 @@
 const path = require("path");
 
 // You can delete this file if you're not using it
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
+  const webpackConfig = {
     resolve: {
       alias: {
         "styled-components": path.resolve(
@@ -15,30 +15,13 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
           "node_modules",
           "styled-components"
         ),
-        "molecules": path.resolve(
-          __dirname,
-          "src",
-          "components",
-          "molecules"
-        ),
-        "atoms": path.resolve(
-          __dirname,
-          "src",
-          "components",
-          "atoms"
-        ),
-        "layout": path.resolve(
-          __dirname,
-          "src",
-          "components",
-          "layout"
-        ),
-        "core": path.resolve(
-          __dirname,
-          "src",
-          "components"
-        )
+        molecules: path.resolve(__dirname, "src", "components", "molecules"),
+        atoms: path.resolve(__dirname, "src", "components", "atoms"),
+        layout: path.resolve(__dirname, "src", "components", "layout"),
+        core: path.resolve(__dirname, "src", "components")
       }
     }
-  });
+  };
+
+  actions.setWebpackConfig(webpackConfig);
 };
