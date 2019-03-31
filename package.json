@@ -1,0 +1,58 @@
+{
+  "name": "philmirez.com",
+  "private": true,
+  "description": "A portfolio site for Phil Ramirez.",
+  "version": "0.1.0",
+  "dependencies": {
+    "@auth0/cosmos": "^0.19.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "css-customs-loader": "^0.2.3",
+    "gatsby": "^2.0.76",
+    "gatsby-background-image": "^0.2.4",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-plugin-typography": "^2.2.5",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-json": "^2.1.8",
+    "gatsby-transformer-remark": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-headroom": "^2.2.7",
+    "react-helmet": "^5.2.0",
+    "react-media": "^1.9.2",
+    "react-pose": "^4.0.7",
+    "react-pose-text": "^3.1.0",
+    "react-responsive": "^6.1.1",
+    "react-typography": "^0.16.18",
+    "styled-components": "^4.1.3",
+    "typography": "^0.16.18",
+    "typography-theme-elk-glen": "^0.16.19",
+    "typography-theme-github": "^0.16.19",
+    "typography-theme-judah": "^0.16.19"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "prettier": "1.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7IHd/philmirez.com.git"
+  }
+}
