@@ -26,7 +26,39 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO
+        title="Phil Ramirez"
+        keywords={[
+          `philmirez`,
+          `phil ramirez`,
+          `phillip ramirez`,
+          `phil`,
+          `ramirez`,
+          `phillip`,
+          `full-stack`,
+          `developer`,
+          `software`,
+          `engineer`,
+          `javascript`,
+          `nodejs`,
+          `node`,
+          `gatsbyjs`,
+          `gatsby`,
+          `linux`,
+          `postgresql`,
+          `sql`,
+          `git`,
+          `expressjs`,
+          `reactjs`,
+          `react`,
+          `redux`,
+          `graphql`,
+          `npm`,
+          `Washington D.C.`,
+          `Northern Virginia`,
+          `George Mason University`
+        ]}
+      />
       <Header />
       <Parallax className="firstOne">
         {/*The size property needs to be media dependent*/}
