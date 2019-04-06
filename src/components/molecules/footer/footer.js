@@ -1,8 +1,10 @@
 import React from "react";
-import { Icon, Stack } from "@auth0/cosmos";
+import Grid from "@material-ui/core/Grid";
+import EmailTwoTone from "@material-ui/icons/EmailTwoTone";
+import MessageTwoTone from "@material-ui/icons/MessageTwoTone";
+import CallMergeTwoTone from "@material-ui/icons/CallMergeTwoTone";
 import { Footer, FooterRow } from "./style";
 import { FooterAvatar, FooterAvatarImg } from "atoms/avatar/avatar";
-import { Contact } from "../modal/style";
 
 export default class extends React.Component {
   render() {
@@ -15,39 +17,69 @@ export default class extends React.Component {
               alt="avatar"
             />
           </FooterAvatar>
-          <Stack align="fill" alignVertical="center" widths={[75, 25]}>
-            <Stack align="left" alignVertical="center">
-              <span>Full Stack Developer </span>
-            </Stack>
-            <Stack align="fill" alignVertical="center">
-              <span>
-                <a
-                  href="mailto:ramirezp6856@gmail.com?Subject=Hey%20Phil"
-                  target="_top"
-                >
-                  <Icon name="mail" size="20" color="white" />
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://github.com/7IHd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon name="brand-github" size="20" color="white" />
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.linkedin.com/in/ramirezp6856"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon name="brand-linkedin" size="20" color="white" />
-                </a>
-              </span>
-            </Stack>
-          </Stack>
+          <Grid
+            container
+            className="footerBottom"
+            direction="row"
+            justify="flex-start"
+            alignItems="flex-start"
+          >
+            <Grid item className="footerProfessionalTitle" xs={6}>
+              <Grid
+                container
+                direction="row"
+                justify="flex-start"
+                alignItems="flex-start"
+              >
+                <span>Full Stack Developer </span>
+              </Grid>
+            </Grid>
+            <Grid item xs={6}>
+              <Grid
+                container
+                direction="row"
+                justify="flex-end"
+                alignItems="flex-start"
+              >
+                <Grid item xs={4}/>
+                <Grid item xs={8}>
+                  <Grid
+                    container
+                    direction="row"
+                    justify="space-between"
+                    alignItems="flex-start"
+                  >
+                    <span>
+                      <a
+                        href="mailto:ramirezp6856@gmail.com?Subject=Hey%20Phil"
+                        target="_top"
+                      >
+                        <EmailTwoTone className="email" />
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://github.com/philmirez"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <CallMergeTwoTone name="brand-github" />
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/philmirez"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageTwoTone className="brand-linkedin" />
+                      </a>
+                    </span>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </FooterRow>
       </Footer>
     );

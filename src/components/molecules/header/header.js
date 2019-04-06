@@ -3,20 +3,25 @@ import Logo from "atoms/logo/logo";
 import Nav from "./nav/nav";
 import Headroom from "react-headroom";
 import { headroom } from "./style";
-import { Stack } from "layout/style"
+import Grid from "@material-ui/core/Grid";
 
 export default class Header extends React.Component {
   render() {
     return (
       <Headroom style={headroom}>
-        <Stack
-          gutter="none"
-          alignment="start"
-          distribution="spaceBetween"
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="flex-start"
         >
-          <Logo />
-          <Nav />
-        </Stack>
+          <Grid item xs={2}>
+            <Logo />
+          </Grid>
+          <Grid item xs={10}>
+            <Nav />
+          </Grid>
+        </Grid>
       </Headroom>
     );
   }

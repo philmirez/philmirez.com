@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import posed from "react-pose";
-import { Button } from "@auth0/cosmos";
 import { ghostProps } from "./pose";
 import { Link } from "gatsby";
 
@@ -18,9 +17,4 @@ const GhostButtonLink = styled(Link)`
   border: 1px solid ${props => props.theme.color.white.secondary};
 `;
 
-const SubmitButton = styled(Button)`
-  color: ${props => props.theme.color.white.secondary};
-  background-color: ${props => props.theme.color.black.secondary};
-`;
-
-export { GhostButton, GhostButtonLink, SubmitButton };
+export { GhostButton, GhostButtonLink };

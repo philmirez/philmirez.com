@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Dialog } from "@auth0/cosmos";
+import Modal from 'react-rainbow-components/components/Modal';
 import { contactProps } from "./pose";
 
-const Contact = styled(Dialog)`
+const Contact = styled(Modal)`
   height: 100vh;
   width: 100%;
   color: ${props => props.theme.color.black.secondary};

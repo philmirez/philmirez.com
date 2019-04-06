@@ -1,29 +1,16 @@
 import styled from "styled-components";
 import posed from "react-pose";
-import {
-  List,
-  PageLayout,
-  RowLayout,
-  StackLayout,
-  GalleryLayout,
-  ColumnLayout,
-  Paragraph
-} from "@auth0/cosmos";
+import Grid from "@material-ui/core/Grid";
 import { cardProps } from "layout/pose";
 
 const Page = styled.div`
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: ${props => props.theme.color.black.primary};
   color: ${props => props.theme.color.white.secondary};
 `;
 
-const Stack = styled(StackLayout)`
-  height: 100%;
-  width: 100%;
-  margin: auto;
-`;
-
-const Gallery = styled(GalleryLayout)`
+const Gallery = styled(Grid)`
   min-height: 100vh;
   overflow: hidden;
   width: 100%;
@@ -32,11 +19,11 @@ const Gallery = styled(GalleryLayout)`
   align-items: center;
 `;
 
-const Row = styled(RowLayout)`
+const Row = styled(Grid)`
   height: 100vh;
 `;
 
-const ListColor = styled(List)`
+const ListColor = styled(Grid)`
   background-color: transparent;
 
   > li {
@@ -62,4 +49,4 @@ const Card = styled(posed.div(cardProps))`
   }
 `;
 
-export { Page, Stack, Row, ListColor, Card, Gallery };
+export { Page, Row, ListColor, Card, Gallery };

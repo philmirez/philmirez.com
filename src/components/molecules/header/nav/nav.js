@@ -1,5 +1,5 @@
 import React from "react";
-import { StackLayout } from "@auth0/cosmos";
+import Grid from "@material-ui/core/Grid";
 import NavList from "./navlist";
 import NavButton from "./navbutton";
 
@@ -18,13 +18,19 @@ export default class Nav extends React.Component {
   render() {
     const { isNavActive } = this.state;
     return (
-      <StackLayout gutter="none" alignment="start" distribution="spaceBetween">
+      <Grid
+        container
+        className="navGrid"
+        direction="row"
+        justify="flex-end"
+        alignItems="flex-start"
+      >
         <NavList isNavActive={isNavActive} />
         <NavButton
           onNavButtonClick={this.toggleNav}
           isNavActive={isNavActive}
         />
-      </StackLayout>
+      </Grid>
     );
   }
 }

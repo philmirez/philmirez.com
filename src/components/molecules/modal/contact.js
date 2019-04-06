@@ -1,43 +1,61 @@
 import React from "react";
-// import Submit from "atoms/button/submit";
-import { Link } from "gatsby";
-import { Heading, Icon } from "@auth0/cosmos";
+import EmailTwoTone from "@material-ui/icons/EmailTwoTone";
+import MessageTwoTone from "@material-ui/icons/MessageTwoTone";
+import Grid from "@material-ui/core/Grid";
 import { Card } from "layout/style";
-import { Contact } from "./style";
+import Modal from "react-rainbow-components/components/Modal";
 
 export default class extends React.Component {
   render() {
-    const { open, loading, success, onSubmitClick, onCloseClick } = this.props;
+    const { open, onCloseClick } = this.props;
     return (
-      <Contact
-        open={open}
+      <Modal
+        className="contactModal"
+        isOpen={open}
         title="Contact"
-        onClose={onCloseClick}
-        /*actions={[
-          <Submit loading={loading} success={success} onClick={onSubmitClick} />
-        ]}*/
+        onRequestClose={onCloseClick}
       >
-        <Heading size={3}>
-          ᕕ(ᐛ)ᕗ Either send me an email or message me on LinkedIn
-        </Heading>
+        <h3>ᕕ(ᐛ)ᕗ Either send me an email or message me on LinkedIn</h3>
         <a
           href="mailto:ramirezp6856@gmail.com?Subject=Hey%20Phil"
           target="_top"
         >
           <Card>
-            <Icon name="mail" size="20" color="black" /> GMail
+            <Grid container>
+              <Grid item xs={12}>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="flex-start"
+                >
+                  <EmailTwoTone className="modalEmail" /> Gmail
+                </Grid>
+              </Grid>
+            </Grid>
           </Card>
         </a>
         <a
-          href="https://www.linkedin.com/in/ramirezp6856"
+          href="https://www.linkedin.com/in/philmirez"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Card>
-            <Icon name="brand-linkedin" size="20" color="black" /> Phil Ramirez
+            <Grid container>
+              <Grid item xs={12}>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="flex-start"
+                >
+                  <MessageTwoTone className="modalBrandLinkedin" /> LinkedIn
+                </Grid>
+              </Grid>
+            </Grid>
           </Card>
         </a>
-      </Contact>
+      </Modal>
     );
   }
 }

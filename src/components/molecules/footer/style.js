@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { RowLayout } from "@auth0/cosmos";
+import Grid from '@material-ui/core/Grid';
+
 
 const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.color.darkGray.primary};
@@ -12,7 +13,7 @@ const Footer = styled.footer`
   width: 100%;
 `;
 
-const FooterRow = styled(RowLayout)`
+const FooterRow = styled(Grid)`
   margin: -70px auto 0px auto;
 `;
 

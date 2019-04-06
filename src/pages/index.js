@@ -2,16 +2,13 @@ import React from "react";
 import { graphql } from "gatsby";
 import SEO from "core/seo";
 import Layout from "layout/layout";
-import { ListColor, Card, Stack } from "layout/style";
+import { Card } from "layout/style";
 import { Gallery } from "layout/style";
 import { Parallax } from "molecules/parallax/parallax";
 import Resume from "molecules/table/resume";
 import Header from "molecules/header/header";
 import Footer from "molecules/footer/footer";
-import { HeadingColor } from "atoms/heading/style";
-import { Heading } from "@auth0/cosmos";
 import { Avatar, AvatarImg } from "atoms/avatar/avatar";
-
 import * as R from "ramda";
 
 const _getHtml = function(edge) {
@@ -37,12 +34,12 @@ const IndexPage = ({ data }) => {
           <Card className="leftHeroCard" initialPose="exit" pose="enter">
             <Avatar>
               <AvatarImg
-                  src="https://avatars2.githubusercontent.com/u/13524654?v=3&s=460"
-                  alt="avatar"
+                src="https://avatars2.githubusercontent.com/u/13524654?v=3&s=460"
+                alt="avatar"
               />
             </Avatar>
-            <Heading size={2}>Phil Ramirez</Heading>
-            <Heading size={3}>Full Stack Developer</Heading>
+            <h2>Phil Ramirez</h2>
+            <h3>Full Stack Developer</h3>
           </Card>
         </Gallery>
       </Parallax>
@@ -201,7 +198,7 @@ const IndexPage = ({ data }) => {
         <Gallery gutter="large" size="medium">
           <div />
           <Card className="rightHeroCard" initialPose="exit" pose="enter">
-            <Heading size={2}>About Me</Heading>
+            <h2>About Me</h2>
             <p>
               I'm a Full Stack Developer who specializes in writing code that
               renders data, migrates data, transforms data, governs data,

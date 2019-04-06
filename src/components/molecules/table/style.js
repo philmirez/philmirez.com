@@ -11,6 +11,7 @@ const Resume = styled.div`
 const Table = styled.div`
   margin: auto;
   padding: 1em 0em;
+  font-weight: normal;
 `;
 
 export { Resume, Table };
