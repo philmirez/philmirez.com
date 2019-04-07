@@ -1,6 +1,6 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import { ParallaxImage, ParallaxColor } from "./style";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import { ParallaxImage, ParallaxColor } from './style';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

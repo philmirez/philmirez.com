@@ -1,3 +1,0 @@
-const contactProps = {};
-
-export { contactProps };

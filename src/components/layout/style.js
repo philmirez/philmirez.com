@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import posed from "react-pose";
-import Grid from "@material-ui/core/Grid";
-import { cardProps } from "layout/pose";
+import styled from 'styled-components';
+import posed from 'react-pose';
+import Grid from '@material-ui/core/Grid';
+import { cardProps } from 'layout/pose';
 
 const Page = styled.div`
   overflow-x: hidden;

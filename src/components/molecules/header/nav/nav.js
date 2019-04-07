@@ -1,13 +1,13 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import NavList from "./navlist";
-import NavButton from "./navbutton";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import NavList from './navlist';
+import NavButton from './navbutton';
 
 export default class Nav extends React.Component {
   constructor() {
     super();
     this.state = {
-      isNavActive: false
+      isNavActive: false,
     };
   }
 

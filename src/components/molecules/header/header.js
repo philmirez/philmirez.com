@@ -1,9 +1,9 @@
-import React from "react";
-import Logo from "atoms/logo/logo";
-import Nav from "./nav/nav";
-import Headroom from "react-headroom";
-import { headroom } from "./style";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import Logo from 'atoms/logo/logo';
+import Nav from './nav/nav';
+import Headroom from 'react-headroom';
+import { headroom } from './style';
+import Grid from '@material-ui/core/Grid';
 
 export default class Header extends React.Component {
   render() {

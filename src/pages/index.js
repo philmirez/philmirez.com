@@ -1,15 +1,15 @@
-import React from "react";
-import { graphql } from "gatsby";
-import SEO from "core/seo";
-import Layout from "layout/layout";
-import { Card } from "layout/style";
-import { Gallery } from "layout/style";
-import { Parallax } from "molecules/parallax/parallax";
-import Resume from "molecules/table/resume";
-import Header from "molecules/header/header";
-import Footer from "molecules/footer/footer";
-import { Avatar, AvatarImg } from "atoms/avatar/avatar";
-import * as R from "ramda";
+import React from 'react';
+import { graphql } from 'gatsby';
+import SEO from 'core/seo';
+import Layout from 'layout/layout';
+import { Card } from 'layout/style';
+import { Gallery } from 'layout/style';
+import { Parallax } from 'molecules/parallax/parallax';
+import Resume from 'molecules/table/resume';
+import Header from 'molecules/header/header';
+import Footer from 'molecules/footer/footer';
+import { Avatar, AvatarImg } from 'atoms/avatar/avatar';
+import * as R from 'ramda';
 
 const _getHtml = function(edge) {
   const { html } = edge.node;
@@ -56,7 +56,7 @@ const IndexPage = ({ data }) => {
           `npm`,
           `Washington D.C.`,
           `Northern Virginia`,
-          `George Mason University`
+          `George Mason University`,
         ]}
       />
       <Header />

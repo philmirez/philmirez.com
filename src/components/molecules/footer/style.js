@@ -1,6 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
-
 
 const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.color.darkGray.primary};

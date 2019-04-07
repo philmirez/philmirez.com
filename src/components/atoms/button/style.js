@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import posed from "react-pose";
-import { ghostProps } from "./pose";
-import { Link } from "gatsby";
+import styled from 'styled-components';
+import posed from 'react-pose';
+import { ghostProps } from './pose';
+import { Link } from 'gatsby';
 
 const GhostButton = styled(posed.div(ghostProps))``;
 

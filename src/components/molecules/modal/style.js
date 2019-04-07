@@ -1,6 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import Modal from 'react-rainbow-components/components/Modal';
-import { contactProps } from "./pose";
 
 const Contact = styled(Modal)`
   height: 100vh;

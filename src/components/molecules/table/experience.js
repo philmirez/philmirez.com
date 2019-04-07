@@ -1,6 +1,6 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Table from "molecules/table/table";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Table from 'molecules/table/table';
 
 export default class extends React.Component {
   render() {

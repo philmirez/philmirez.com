@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
-import { Page } from "layout/style";
-import { theme } from "core/theme";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import { Page } from 'layout/style';
+import { theme } from 'core/theme';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

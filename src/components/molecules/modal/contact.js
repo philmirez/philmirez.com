@@ -1,9 +1,9 @@
-import React from "react";
-import EmailTwoTone from "@material-ui/icons/EmailTwoTone";
-import MessageTwoTone from "@material-ui/icons/MessageTwoTone";
-import Grid from "@material-ui/core/Grid";
-import { Card } from "layout/style";
-import Modal from "react-rainbow-components/components/Modal";
+import React from 'react';
+import EmailTwoTone from '@material-ui/icons/EmailTwoTone';
+import MessageTwoTone from '@material-ui/icons/MessageTwoTone';
+import Grid from '@material-ui/core/Grid';
+import { Card } from 'layout/style';
+import Modal from 'react-rainbow-components/components/Modal';
 
 export default class extends React.Component {
   render() {

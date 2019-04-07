@@ -1,10 +1,10 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import EmailTwoTone from "@material-ui/icons/EmailTwoTone";
-import MessageTwoTone from "@material-ui/icons/MessageTwoTone";
-import CallMergeTwoTone from "@material-ui/icons/CallMergeTwoTone";
-import { Footer, FooterRow } from "./style";
-import { FooterAvatar, FooterAvatarImg } from "atoms/avatar/avatar";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import EmailTwoTone from '@material-ui/icons/EmailTwoTone';
+import MessageTwoTone from '@material-ui/icons/MessageTwoTone';
+import CallMergeTwoTone from '@material-ui/icons/CallMergeTwoTone';
+import { Footer, FooterRow } from './style';
+import { FooterAvatar, FooterAvatarImg } from 'atoms/avatar/avatar';
 
 export default class extends React.Component {
   render() {
@@ -41,7 +41,7 @@ export default class extends React.Component {
                 justify="flex-end"
                 alignItems="flex-start"
               >
-                <Grid item xs={4}/>
+                <Grid item xs={4} />
                 <Grid item xs={8}>
                   <Grid
                     container

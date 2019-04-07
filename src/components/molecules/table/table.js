@@ -1,6 +1,6 @@
-import React from "react";
-import { Table } from "molecules/table/style";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import { Table } from 'molecules/table/style';
+import Grid from '@material-ui/core/Grid';
 
 const _renderCell = (key, content) => {
   if (!content) {
@@ -8,7 +8,7 @@ const _renderCell = (key, content) => {
   }
 
   switch (true) {
-    case key === "row_0_cell_0":
+    case key === 'row_0_cell_0':
       return (
         <Grid container key={key}>
           <h2>{content}</h2>
@@ -38,7 +38,7 @@ const _renderCell = (key, content) => {
 const _renderRow = (row, rowIndex) => {
   const keys = Object.keys(row);
   const rowCellArray = keys.map((key, cellIndex) =>
-    _renderCell(`row_${rowIndex}_cell_${cellIndex}`, row[key])
+    _renderCell(`row_${rowIndex}_cell_${cellIndex}`, row[key]),
   );
 
   return (

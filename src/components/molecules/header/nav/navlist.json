@@ -1,10 +1,10 @@
 [
-	{
-		"value": "About",
-		"path": "/about"
-	},
-	{
-		"value": "Contact",
-		"path": "/hey"
-	}
+  {
+    "value": "About",
+    "path": "/about"
+  },
+  {
+    "value": "Contact",
+    "path": "/hey"
+  }
 ]

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "gatsby";
-import { LogoWrapper, LogoSvg, LogoPath } from "./style";
+import React from 'react';
+import { Link } from 'gatsby';
+import { LogoWrapper, LogoSvg, LogoPath } from './style';
 
 export default class Logo extends React.Component {
   render() {

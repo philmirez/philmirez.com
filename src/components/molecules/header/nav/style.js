@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import posed from "react-pose";
+import styled from 'styled-components';
+import posed from 'react-pose';
 import {
   navButtonBarProps,
   navButtonProps,
   navItemProps,
-  navListProps
-} from "./pose";
-import { Link } from "gatsby";
+  navListProps,
+} from './pose';
+import { Link } from 'gatsby';
 
 const NavButton = styled(posed.button(navButtonProps))`
   background-color: transparent;
@@ -23,7 +23,7 @@ const NavButtonBar = styled(posed.span(navButtonBarProps))`
   display: block;
   background-color: ${props => props.theme.color.white.secondary};
   cursor: pointer;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 `;
 
 const NavLink = styled(Link)`

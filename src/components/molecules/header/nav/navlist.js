@@ -1,8 +1,8 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import PropTypes from "prop-types";
-import Contact from "molecules/modal/contact";
-import { NavLink, ContactLink, NavItem, NavList } from "./style";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import Contact from 'molecules/modal/contact';
+import { NavLink, ContactLink, NavItem, NavList } from './style';
 
 function _getNavItems(data) {
   const navItemArray = [];
@@ -10,8 +10,8 @@ function _getNavItems(data) {
     navItemArray.push(
       <NavItem key={element.node.value}>
         <NavLink to={element.node.path}>{element.node.value}</NavLink>
-      </NavItem>
-    )
+      </NavItem>,
+    ),
   );
   return navItemArray;
 }
@@ -22,7 +22,7 @@ export default class extends React.Component {
     this.state = {
       open: false,
       loading: false,
-      success: false
+      success: false,
     };
   }
 
@@ -33,13 +33,13 @@ export default class extends React.Component {
   setSubmitState = () => {
     const dis = this;
     dis.setState({
-      loading: true
+      loading: true,
     });
 
     setTimeout(function() {
       dis.setState({
         loading: false,
-        success: true
+        success: true,
       });
     }, 3000);
   };
@@ -63,7 +63,7 @@ export default class extends React.Component {
           }
         `}
         render={data => (
-          <NavList pose={isNavActive ? "visible" : "hidden"}>
+          <NavList pose={isNavActive ? 'visible' : 'hidden'}>
             {/* TODO Create content to use additional nav items
             <StaticQueryNavList data={data} />
             */}
@@ -95,10 +95,10 @@ StaticQueryNavList.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             value: PropTypes.string.isRequired,
-            path: PropTypes.string.isRequired
-          }).isRequired
-        })
-      ).isRequired
-    }).isRequired
-  }).isRequired
+            path: PropTypes.string.isRequired,
+          }).isRequired,
+        }),
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
