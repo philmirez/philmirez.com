@@ -230,8 +230,7 @@ const IndexPage = ({ data }) => {
             <p>
               I'm a Full Stack Developer who specializes in writing code that
               renders data, migrates data, transforms data, governs data,
-              retrieves data, stores data, and many more adjectives concerning
-              data.
+              retrieves data, caches data, and stores data. :)
             </p>
             <p>
               In my free time I like to spend time with my family, run in half
