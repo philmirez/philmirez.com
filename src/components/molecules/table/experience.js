@@ -26,7 +26,6 @@ export default class extends React.Component {
 }
 
 const StaticQueryExperience = ({ data }) => {
-  console.log(data);
   const json = data.allExperienceJson;
   return <Table json={json} />;
 };

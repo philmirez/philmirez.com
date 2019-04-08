@@ -25,7 +25,6 @@ export default class extends React.Component {
 }
 
 const StaticQueryEducation = ({ data }) => {
-  console.log(data);
   const json = data.allEducationJson;
   return <Table json={json} />;
 };

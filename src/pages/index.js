@@ -18,11 +18,7 @@ const _getHtml = function(edge) {
 
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
-
-  console.log(edges);
   const extractedHtml = R.map(_getHtml, edges);
-
-  console.log(extractedHtml);
 
   return (
     <Layout>
@@ -66,7 +62,7 @@ const IndexPage = ({ data }) => {
           <Card className="leftHeroCard" initialPose="exit" pose="enter">
             <Avatar>
               <AvatarImg
-                src="https://avatars2.githubusercontent.com/u/13524654?v=3&s=460"
+                src="https://media.licdn.com/dms/image/C5603AQELZBEKa-piag/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=qZG2X9_pAuLh42OmbBrFy8I1RuTATLkRYg2LpLwooYE"
                 alt="avatar"
               />
             </Avatar>

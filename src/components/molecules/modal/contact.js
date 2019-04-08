@@ -17,7 +17,7 @@ export default class extends React.Component {
       >
         <h3>ᕕ(ᐛ)ᕗ Either send me an email or message me on LinkedIn</h3>
         <a
-          href="mailto:ramirezp6856@gmail.com?Subject=Hey%20Phil"
+          href="mailto:philmirez@gmail.com?Subject=Hey%20Phil"
           target="_top"
         >
           <Card>

@@ -51,7 +51,7 @@ export default class extends React.Component {
                   >
                     <span>
                       <a
-                        href="mailto:ramirezp6856@gmail.com?Subject=Hey%20Phil"
+                        href="mailto:philmirez@gmail.com?Subject=Hey%20Phil"
                         target="_top"
                       >
                         <EmailTwoTone className="email" />
