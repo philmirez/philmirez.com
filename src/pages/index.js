@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
           <Card className="leftHeroCard" initialPose="exit" pose="enter">
             <Avatar>
               <AvatarImg
-                src="https://media.licdn.com/dms/image/C5603AQELZBEKa-piag/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=qZG2X9_pAuLh42OmbBrFy8I1RuTATLkRYg2LpLwooYE"
+                src="https://lh3.googleusercontent.com/-Y0KSSPzajYA/XKqmmQerRKI/AAAAAAAAAAs/6kHIvHPgrUMqcDQx_Ymod_rylpJyrvHBwCEwYBhgL/w280-h280-p/me.jpeg"
                 alt="avatar"
               />
             </Avatar>
