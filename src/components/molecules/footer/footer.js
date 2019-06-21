@@ -1,35 +1,35 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import EmailTwoTone from '@material-ui/icons/EmailTwoTone';
-import MessageTwoTone from '@material-ui/icons/MessageTwoTone';
-import CallMergeTwoTone from '@material-ui/icons/CallMergeTwoTone';
-import { Footer, FooterRow } from './style';
-import { FooterAvatar, FooterAvatarImg } from 'atoms/avatar/avatar';
+import React from 'react'
+import Grid from '@material-ui/core/Grid'
+import EmailTwoTone from '@material-ui/icons/EmailTwoTone'
+import MessageTwoTone from '@material-ui/icons/MessageTwoTone'
+import CallMergeTwoTone from '@material-ui/icons/CallMergeTwoTone'
+import { Footer, FooterRow } from './style'
+import { FooterAvatar, FooterAvatarImg } from 'atoms/avatar/avatar'
 
 export default class extends React.Component {
-  render() {
+  render () {
     return (
       <Footer>
-        <FooterRow gutter="small">
+        <FooterRow gutter='small'>
           <FooterAvatar>
             <FooterAvatarImg
-              src="https://avatars2.githubusercontent.com/u/13524654?v=3&s=460"
-              alt="avatar"
+              src='https://avatars2.githubusercontent.com/u/13524654?v=3&s=460'
+              alt='avatar'
             />
           </FooterAvatar>
           <Grid
             container
-            className="footerBottom"
-            direction="row"
-            justify="flex-start"
-            alignItems="flex-start"
+            className='footerBottom'
+            direction='row'
+            justify='flex-start'
+            alignItems='flex-start'
           >
-            <Grid item className="footerProfessionalTitle" xs={6}>
+            <Grid item className='footerProfessionalTitle' xs={6}>
               <Grid
                 container
-                direction="row"
-                justify="flex-start"
-                alignItems="flex-start"
+                direction='row'
+                justify='flex-start'
+                alignItems='flex-start'
               >
                 <span>Full Stack Developer </span>
               </Grid>
@@ -37,42 +37,42 @@ export default class extends React.Component {
             <Grid item xs={6}>
               <Grid
                 container
-                direction="row"
-                justify="flex-end"
-                alignItems="flex-start"
+                direction='row'
+                justify='flex-end'
+                alignItems='flex-start'
               >
                 <Grid item xs={4} />
                 <Grid item xs={8}>
                   <Grid
                     container
-                    direction="row"
-                    justify="space-between"
-                    alignItems="flex-start"
+                    direction='row'
+                    justify='space-between'
+                    alignItems='flex-start'
                   >
                     <span>
                       <a
-                        href="mailto:philmirez@gmail.com?Subject=Hey%20Phil"
-                        target="_top"
+                        href='mailto:philmirez@gmail.com?Subject=Hey%20Phil'
+                        target='_top'
                       >
-                        <EmailTwoTone className="email" />
+                        <EmailTwoTone className='email' />
                       </a>
                     </span>
                     <span>
                       <a
-                        href="https://github.com/philmirez"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href='https://github.com/philmirez'
+                        target='_blank'
+                        rel='noopener noreferrer'
                       >
-                        <CallMergeTwoTone name="brand-github" />
+                        <CallMergeTwoTone name='brand-github' />
                       </a>
                     </span>
                     <span>
                       <a
-                        href="https://www.linkedin.com/in/philmirez"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href='https://www.linkedin.com/in/philmirez'
+                        target='_blank'
+                        rel='noopener noreferrer'
                       >
-                        <MessageTwoTone className="brand-linkedin" />
+                        <MessageTwoTone className='brand-linkedin' />
                       </a>
                     </span>
                   </Grid>
@@ -82,6 +82,6 @@ export default class extends React.Component {
           </Grid>
         </FooterRow>
       </Footer>
-    );
+    )
   }
 }

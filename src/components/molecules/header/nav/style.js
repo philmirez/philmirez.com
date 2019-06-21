@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import posed from 'react-pose';
+import styled from 'styled-components'
+import posed from 'react-pose'
 import {
   navButtonBarProps,
   navButtonProps,
   navItemProps,
-  navListProps,
-} from './pose';
-import { Link } from 'gatsby';
+  navListProps
+} from './pose'
+import { Link } from 'gatsby'
 
 const NavButton = styled(posed.button(navButtonProps))`
   background-color: transparent;
@@ -17,14 +17,14 @@ const NavButton = styled(posed.button(navButtonProps))`
   width: 2.75rem;
   display: block;
   cursor: pointer;
-`;
+`
 
 const NavButtonBar = styled(posed.span(navButtonBarProps))`
   display: block;
   background-color: ${props => props.theme.color.white.secondary};
   cursor: pointer;
   margin-bottom: 0.5rem;
-`;
+`
 
 const NavLink = styled(Link)`
   display: flex;
@@ -33,18 +33,18 @@ const NavLink = styled(Link)`
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
-`;
+`
 
 const NavList = styled(posed.ul(navListProps))`
   list-style: none;
   display: block;
   margin: 0;
-`;
+`
 
 const NavItem = styled(posed.li(navItemProps))`
   display: inline-block;
   margin-right: 2em;
-`;
+`
 
 const ContactLink = styled.span`
   display: flex;
@@ -54,6 +54,6 @@ const ContactLink = styled.span`
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-`;
+`
 
-export { NavList, NavItem, NavLink, NavButton, NavButtonBar, ContactLink };
+export { NavList, NavItem, NavLink, NavButton, NavButtonBar, ContactLink }

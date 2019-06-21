@@ -1,19 +1,19 @@
-import React from 'react';
-import Logo from 'atoms/logo/logo';
-import Nav from './nav/nav';
-import Headroom from 'react-headroom';
-import { headroom } from './style';
-import Grid from '@material-ui/core/Grid';
+import React from 'react'
+import Logo from 'atoms/logo/logo'
+import Nav from './nav/nav'
+import Headroom from 'react-headroom'
+import { headroom } from './style'
+import Grid from '@material-ui/core/Grid'
 
 export default class Header extends React.Component {
-  render() {
+  render () {
     return (
       <Headroom style={headroom}>
         <Grid
           container
-          direction="row"
-          justify="space-between"
-          alignItems="flex-start"
+          direction='row'
+          justify='space-between'
+          alignItems='flex-start'
         >
           <Grid item xs={2}>
             <Logo />
@@ -23,7 +23,7 @@ export default class Header extends React.Component {
           </Grid>
         </Grid>
       </Headroom>
-    );
+    )
   }
 }
 

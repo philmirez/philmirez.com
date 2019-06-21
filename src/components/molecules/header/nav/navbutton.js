@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavButton, NavButtonBar } from './style';
+import React from 'react'
+import { NavButton, NavButtonBar } from './style'
 
 export default class extends React.Component {
-  render() {
+  render () {
     return (
       <NavButton
         onClick={this.props.onNavButtonClick}
@@ -12,6 +12,6 @@ export default class extends React.Component {
         <NavButtonBar />
         <NavButtonBar />
       </NavButton>
-    );
+    )
   }
 }

@@ -2,7 +2,7 @@ const ghostProps = {
   hoverable: true,
   hover: {
     y: -8,
-    opacity: 0.8,
+    opacity: 0.8
   },
   enter: {
     x: 0,
@@ -10,13 +10,13 @@ const ghostProps = {
     opacity: 1,
     delayChildren: 0,
     staggerChildren: 0,
-    staggerDirection: 1,
+    staggerDirection: 1
   },
   exit: {
     x: 300,
     y: 200,
-    opacity: 0,
-  },
-};
+    opacity: 0
+  }
+}
 
-export { ghostProps };
+export { ghostProps }

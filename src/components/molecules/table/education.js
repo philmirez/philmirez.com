@@ -1,9 +1,9 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Table from 'molecules/table/table';
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Table from 'molecules/table/table'
 
 export default class extends React.Component {
-  render() {
+  render () {
     return (
       <StaticQuery
         query={graphql`
@@ -20,11 +20,11 @@ export default class extends React.Component {
         `}
         render={data => <StaticQueryEducation data={data} {...this.props} />}
       />
-    );
+    )
   }
 }
 
 const StaticQueryEducation = ({ data }) => {
-  const json = data.allEducationJson;
-  return <Table json={json} />;
-};
+  const json = data.allEducationJson
+  return <Table json={json} />
+}

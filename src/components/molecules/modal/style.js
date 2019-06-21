@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Modal from 'react-rainbow-components/components/Modal';
+import styled from 'styled-components'
+import Modal from 'react-rainbow-components/components/Modal'
 
 const Contact = styled(Modal)`
   height: 100vh;
@@ -19,6 +19,6 @@ const Contact = styled(Modal)`
     background-color: ${props => props.theme.color.darkGray.primary};
     border-radius: 0px 0px 3px 3px;
   }
-`;
+`
 
-export { Contact };
+export { Contact }

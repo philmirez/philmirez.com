@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Grid from '@material-ui/core/Grid';
+import styled from 'styled-components'
+import Grid from '@material-ui/core/Grid'
 
 const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.color.darkGray.primary};
@@ -10,10 +10,10 @@ const Footer = styled.footer`
   margin-right: auto;
   text-align: center;
   width: 100%;
-`;
+`
 
 const FooterRow = styled(Grid)`
   margin: -70px auto 0px auto;
-`;
+`
 
-export { Footer, FooterRow };
+export { Footer, FooterRow }

@@ -1,29 +1,29 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import NavList from './navlist';
-import NavButton from './navbutton';
+import React from 'react'
+import Grid from '@material-ui/core/Grid'
+import NavList from './navlist'
+import NavButton from './navbutton'
 
 export default class Nav extends React.Component {
-  constructor() {
-    super();
+  constructor () {
+    super()
     this.state = {
-      isNavActive: false,
-    };
+      isNavActive: false
+    }
   }
 
   toggleNav = () => {
-    this.setState({ isNavActive: !this.state.isNavActive });
-  };
+    this.setState({ isNavActive: !this.state.isNavActive })
+  }
 
-  render() {
-    const { isNavActive } = this.state;
+  render () {
+    const { isNavActive } = this.state
     return (
       <Grid
         container
-        className="navGrid"
-        direction="row"
-        justify="flex-end"
-        alignItems="flex-start"
+        className='navGrid'
+        direction='row'
+        justify='flex-end'
+        alignItems='flex-start'
       >
         <NavList isNavActive={isNavActive} />
         <NavButton
@@ -31,7 +31,7 @@ export default class Nav extends React.Component {
           isNavActive={isNavActive}
         />
       </Grid>
-    );
+    )
   }
 }
 

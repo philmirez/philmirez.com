@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import posed from 'react-pose';
-import Grid from '@material-ui/core/Grid';
-import { cardProps } from 'layout/pose';
+import styled from 'styled-components'
+import posed from 'react-pose'
+import Grid from '@material-ui/core/Grid'
+import { cardProps } from 'layout/pose'
 
 const Page = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: ${props => props.theme.color.black.primary};
   color: ${props => props.theme.color.white.secondary};
-`;
+`
 
 const Gallery = styled(Grid)`
   min-height: 100vh;
@@ -17,11 +17,11 @@ const Gallery = styled(Grid)`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 const Row = styled(Grid)`
   height: 100vh;
-`;
+`
 
 const ListColor = styled(Grid)`
   background-color: transparent;
@@ -33,7 +33,7 @@ const ListColor = styled(Grid)`
   > li:hover {
     background-color: transparent;
   }
-`;
+`
 
 const Card = styled(posed.div(cardProps))`
   background-color: ${props => props.theme.color.white.secondary};
@@ -47,6 +47,6 @@ const Card = styled(posed.div(cardProps))`
   div:first-child {
     text-align: center;
   }
-`;
+`
 
-export { Page, Row, ListColor, Card, Gallery };
+export { Page, Row, ListColor, Card, Gallery }

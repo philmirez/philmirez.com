@@ -1,6 +1,6 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import { ParallaxImage, ParallaxColor } from './style';
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { ParallaxImage, ParallaxColor } from './style'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -17,11 +17,11 @@ const ParallaxSatellite = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
-        satelliteImage: file(relativePath: { eq: "satellite.jpg" }) {
+        mountainImage: file(relativePath: { eq: "mountain.jpg" }) {
           childImageSharp {
             fluid(
-              duotone: { highlight: "#0ec4f1", shadow: "#6699CC", opacity: 35 }
-              maxWidth: 1800
+              duotone: { highlight: "#0ec4f1", shadow: "#6699CC", opacity: 25 }
+              maxWidth: 3840
               cropFocus: WEST
             ) {
               ...GatsbyImageSharpFluid
@@ -31,19 +31,24 @@ const ParallaxSatellite = ({ className, children }) => (
       }
     `}
     render={data => {
-      const { fluid } = data.satelliteImage.childImageSharp;
+      const { fluid } = data.mountainImage.childImageSharp
 
       return (
         <ParallaxImage className={className} fluid={fluid} children={children}>
           {children}
         </ParallaxImage>
-      );
+      )
     }}
   />
-);
+)
 
-const ParallaxType = function({ className, fluid, backgroundColor, children }) {
-  return !!backgroundColor ? (
+const ParallaxType = function ({
+  className,
+  fluid,
+  backgroundColor,
+  children
+}) {
+  return backgroundColor ? (
     <ParallaxColor className={className} backgroundColor={backgroundColor}>
       {children}
     </ParallaxColor>
@@ -53,17 +58,17 @@ const ParallaxType = function({ className, fluid, backgroundColor, children }) {
       fluid={fluid}
       children={children}
     />
-  );
-};
+  )
+}
 
 export default class Parallax extends React.Component {
-  render() {
-    const { props } = this;
-    return <ParallaxType {...props} />;
+  render () {
+    const { props } = this
+    return <ParallaxType {...props} />
   }
 }
 
-export { Parallax };
+export { Parallax }
 
 // Sources:
 // - https://github.com/gatsbyjs/gatsby/issues/2470

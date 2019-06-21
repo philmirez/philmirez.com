@@ -1,11 +1,11 @@
-import React from 'react';
-import { SubmitButton } from './style';
+import React from 'react'
+import { SubmitButton } from './style'
 
 export default class Submit extends React.Component {
-  render() {
-    const { props } = this;
+  render () {
+    const { props } = this
 
-    return <SubmitButton {...props}>Submit</SubmitButton>;
+    return <SubmitButton {...props}>Submit</SubmitButton>
   }
 }
 

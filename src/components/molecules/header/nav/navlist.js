@@ -1,52 +1,53 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-import Contact from 'molecules/modal/contact';
-import { NavLink, ContactLink, NavItem, NavList } from './style';
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import Contact from 'molecules/modal/contact'
+import { NavLink, ContactLink, NavItem, NavList } from './style'
 
-function _getNavItems(data) {
-  const navItemArray = [];
+function _getNavItems (data) {
+  const navItemArray = []
   data.allHeaderJson.edges.forEach(element =>
     navItemArray.push(
       <NavItem key={element.node.value}>
         <NavLink to={element.node.path}>{element.node.value}</NavLink>
-      </NavItem>,
-    ),
-  );
-  return navItemArray;
+      </NavItem>
+    )
+  )
+  return navItemArray
 }
 
 export default class extends React.Component {
-  constructor() {
-    super();
+  constructor () {
+    super()
     this.state = {
       open: false,
       loading: false,
-      success: false,
-    };
+      success: false
+    }
   }
 
   setContactState = () => {
-    this.setState({ open: !this.state.open });
-  };
+    this.setState({ open: !this.state.open })
+  }
 
   setSubmitState = () => {
-    const dis = this;
+    const dis = this
     dis.setState({
-      loading: true,
-    });
+      loading: true
+    })
 
-    setTimeout(function() {
+    setTimeout(function () {
       dis.setState({
         loading: false,
-        success: true,
-      });
-    }, 3000);
-  };
+        success: true
+      })
+    }, 3000)
+  }
 
-  render() {
-    const { isNavActive } = this.props,
-      { open, loading, success } = this.state;
+  render () {
+    const { isNavActive } = this.props
+
+    const { open, loading, success } = this.state
 
     return (
       <StaticQuery
@@ -80,13 +81,13 @@ export default class extends React.Component {
           </NavList>
         )}
       />
-    );
+    )
   }
 }
 
 const StaticQueryNavList = ({ data }) => {
-  return <span>{_getNavItems(data)}</span>;
-};
+  return <span>{_getNavItems(data)}</span>
+}
 
 StaticQueryNavList.propTypes = {
   data: PropTypes.shape({
@@ -95,10 +96,10 @@ StaticQueryNavList.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             value: PropTypes.string.isRequired,
-            path: PropTypes.string.isRequired,
-          }).isRequired,
-        }),
-      ).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
+            path: PropTypes.string.isRequired
+          }).isRequired
+        })
+      ).isRequired
+    }).isRequired
+  }).isRequired
+}
