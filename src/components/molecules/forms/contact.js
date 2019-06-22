@@ -81,11 +81,11 @@ export default class Contact extends React.Component {
               rowsMax="4"
             />
           </p>
-          <Recaptcha
+          {/*<Recaptcha
             ref="recaptcha"
             sitekey={RECAPTCHA_KEY}
             onChange={this.handleRecaptcha}
-          />
+          />*/}
           <p>
             <Button variant="contained" type="submit">
               Send
