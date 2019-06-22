@@ -28,6 +28,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-google-recaptcha": "^1.0.5",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.1",
     "react-media": "^1.9.2",
@@ -47,7 +48,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "lint": "standard '{src,scripts}/**/*.js'",
