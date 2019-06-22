@@ -1,7 +1,18 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
+import config from './scripts-config'
 
-// You can delete this file if you're not using it
+const getThirdPartyScripts = () =>
+  config.map(script => (
+    <React.Fragment>
+      <script key={script.key} src={script.src} async={!!script.async} />
+      {script.variables && (
+        <script dangerouslySetInnerHTML={{ __html: script.variables }} />
+      )}
+    </React.Fragment>
+  ))
+
+const onRenderBody = ({ setHeadComponents }) => setHeadComponents(getThirdPartyScripts())
+
+export {
+  onRenderBody
+}

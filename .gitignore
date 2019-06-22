@@ -5,3 +5,7 @@ public
 node_modules
 
 .cache
+
+.env
+.env.development
+.env.production

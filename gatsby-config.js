@@ -1,3 +1,9 @@
+const path = require('path')
+
+require('dotenv').config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV}`)
+})
+
 module.exports = {
   siteMetadata: {
     title: `philmirez.com`,
@@ -52,5 +58,29 @@ module.exports = {
         path: `src/components`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `${process.env.GA_TRACKING_ID}`,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        // anonymize: true,
+        // Setting this parameter is also optional
+        // respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Any additional create only fields (optional)
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        cookieDomain: "philmirez.com",
+      },
+    }
   ],
 };
