@@ -48,7 +48,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
+    "build": "gatsby clean && echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "lint": "standard '{src,scripts}/**/*.js'",

@@ -13,7 +13,8 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
         molecules: path.resolve(__dirname, 'src', 'components', 'molecules'),
         atoms: path.resolve(__dirname, 'src', 'components', 'atoms'),
         layout: path.resolve(__dirname, 'src', 'components', 'layout'),
-        core: path.resolve(__dirname, 'src', 'components')
+        core: path.resolve(__dirname, 'src', 'components'),
+        hooks: path.resolve(__dirname, 'src', 'hooks')
       },
     },
   };
