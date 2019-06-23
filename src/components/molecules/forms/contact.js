@@ -16,6 +16,9 @@ export default () => (
             <p>This form won’t work with Javascript disabled</p>
           </noscript>
           <div>
+            <input type="hidden" name="form-name" value="contact" />
+          </div>
+          <div>
               <TextField
                 label="Name"
                 margin="normal"
