@@ -10,8 +10,7 @@ export default () => (
         <h2>Feel free to contact me!</h2>
         <form
           name="contact"
-          method="POST"
-          data-netlify="true"
+          netlify
         >
           <noscript>
             <p>This form won’t work with Javascript disabled</p>
