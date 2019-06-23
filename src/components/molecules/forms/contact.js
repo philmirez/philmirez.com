@@ -10,19 +10,18 @@ const _getContactForm = (values, handleChange, handleSubmit) => (
   <React.Fragment>
     <h2 style={{ color: 'black', fontSize: '2em' }}>Feel free to contact me!</h2>
     <form
-      onSubmit={handleSubmit}
-      data-netlify="true"
       name="contact"
       method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <noscript>
         <p>This form won’t work with Javascript disabled</p>
       </noscript>
       <div>
-        <input style={{ color: 'black', fontSize: '2em' }} type="hidden" name="form-name" value="contact" />
-      </div>
-      <div>
         <TextField
+          style={{ color: 'black', fontSize: '2em' }}
           label="Name"
           margin="normal"
           name='name'
