@@ -1,16 +1,16 @@
 const theme = {
   color: {
     black: {
-      primary: '#1B2B34',
-      secondary: '#343D46'
+      primary: '#000',
+      secondary: '#333'
     },
     darkGray: {
-      primary: '#4F5B66',
-      secondary: '#65737E'
+      primary: '#000',
+      secondary: '#333'
     },
     lightGray: {
       primary: '#A7ADBA',
-      secondary: '#C0C5CE'
+      secondary: '#000'
     },
     white: {
       primary: '#CDD3DE',

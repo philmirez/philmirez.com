@@ -46,35 +46,17 @@ export default class extends React.Component {
                   <Grid
                     container
                     direction='row'
-                    justify='space-between'
-                    alignItems='flex-start'
+                    justify='flex-end'
+                    alignItems='flex-end'
                   >
-                    <span>
+                    <Grid item>
                       <a
                         href='mailto:philmirez@gmail.com?Subject=Hey%20Phil'
                         target='_top'
                       >
                         <EmailTwoTone className='email' />
                       </a>
-                    </span>
-                    <span>
-                      <a
-                        href='https://github.com/philmirez'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <CallMergeTwoTone name='brand-github' />
-                      </a>
-                    </span>
-                    <span>
-                      <a
-                        href='https://www.linkedin.com/in/philmirez'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <MessageTwoTone className='brand-linkedin' />
-                      </a>
-                    </span>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>

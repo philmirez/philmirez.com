@@ -10,6 +10,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   const webpackConfig = {
     resolve: {
       alias: {
+        buildingBlocks: path.resolve(__dirname, 'src', 'stagingComponents', 'buildingBlocks'),
         molecules: path.resolve(__dirname, 'src', 'components', 'molecules'),
         atoms: path.resolve(__dirname, 'src', 'components', 'atoms'),
         layout: path.resolve(__dirname, 'src', 'components', 'layout'),

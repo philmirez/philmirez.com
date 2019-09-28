@@ -39,7 +39,6 @@ const Card = styled(posed.div(cardProps))`
   background-color: ${props => props.theme.color.white.secondary};
   color: ${props => props.theme.color.darkGray.primary};
   padding: 2em;
-  border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: relative;
   margin: 1em auto;

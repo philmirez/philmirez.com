@@ -2,12 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from 'core/seo'
 import Layout from 'layout/layout'
-import { Card, Gallery } from 'layout/style'
-import { Parallax } from 'molecules/parallax/parallax'
-import Resume from 'molecules/table/resume'
-import Header from 'molecules/header/header'
+import Header from 'buildingBlocks/Header'
+import Home from 'buildingBlocks/Home'
 import Footer from 'molecules/footer/footer'
-import { Avatar, AvatarImg } from 'atoms/avatar/avatar'
+import { Card, Gallery } from 'layout/style'
+import Resume from 'molecules/table/resume'
+import { Parallax } from 'molecules/parallax/parallax'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -44,29 +44,16 @@ const IndexPage = ({ data }) => (
         `George Mason University`
       ]}
     />
-    <Header />
-    <Parallax className='firstOne'>
-      {/* The size property needs to be media dependent */}
-      <Gallery gutter='large' size='medium'>
-        <Card className='leftHeroCard' initialPose='exit' pose='enter'>
-          <Avatar>
-            <AvatarImg
-              src='https://lh3.googleusercontent.com/-Y0KSSPzajYA/XKqmmQerRKI/AAAAAAAAAAs/6kHIvHPgrUMqcDQx_Ymod_rylpJyrvHBwCEwYBhgL/w280-h280-p/me.jpeg'
-              alt='avatar'
-            />
-          </Avatar>
-          <h1 style={{ color: 'black', fontSize: '4em' }}>Phil Ramirez</h1>
-          <h3>Full Stack Developer</h3>
-        </Card>
-      </Gallery>
-    </Parallax>
+    <Header link={{ url: '/contact', title: 'Contact'}}/>
+    <Parallax className='firstOne' />
+    <Home />
     <Parallax
       className='secondOne'
       backgroundColor={props => props.theme.color.darkGray.primary}
     >
       <Resume />
     </Parallax>
-    <Parallax className='thirdOne' backgroundColor='#1B2B34'>
+    <Parallax className='thirdOne' backgroundColor='#000'>
       <svg
         height='600'
         version='1.1'
@@ -227,20 +214,20 @@ const IndexPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query IndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          frontmatter {
-            title
-            path
-            date(formatString: "MMMM DD, YYYY")
-          }
+    query IndexQuery {
+        allMarkdownRemark {
+            edges {
+                node {
+                    html
+                    frontmatter {
+                        title
+                        path
+                        date(formatString: "MMMM DD, YYYY")
+                    }
+                }
+            }
         }
-      }
     }
-  }
 `
 
 export default IndexPage
