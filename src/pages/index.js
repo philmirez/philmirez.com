@@ -8,6 +8,7 @@ import Footer from 'molecules/footer/footer'
 import { Card, Gallery } from 'layout/style'
 import Resume from 'molecules/table/resume'
 import { Parallax } from 'molecules/parallax/parallax'
+import Grid from '@material-ui/core/Grid'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -53,7 +54,7 @@ const IndexPage = ({ data }) => (
     >
       <Resume />
     </Parallax>
-    <Parallax className='thirdOne' backgroundColor='#000'>
+    <Parallax className='thirdOne' backgroundColor='#4078c0'>
       <svg
         height='600'
         version='1.1'
@@ -193,6 +194,10 @@ const IndexPage = ({ data }) => (
           </g>
         </g>
       </svg>
+      <Grid container>
+        <Grid item xs={12}>
+          <Grid container alignContent={'center'} justify={'center'}>
+            <Grid item xs={12} sm={8} md={6} lg={3}>
       <Gallery gutter='large' size='medium'>
         <div />
         <Card className='rightHeroCard' initialPose='exit' pose='enter'>
@@ -208,6 +213,10 @@ const IndexPage = ({ data }) => (
           </p>
         </Card>
       </Gallery>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </Parallax>
     <Footer />
   </Layout>

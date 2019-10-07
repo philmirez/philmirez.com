@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const style = [
-  'min-height: 100vh',
+  'min-height: 120vh',
   'z-index: 5',
   'padding: 3rem 2rem',
   'overflow: hidden',

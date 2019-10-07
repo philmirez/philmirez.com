@@ -22,7 +22,7 @@ const FooterAvatarImg = styled.img`
 `
 
 const FooterAvatar = styled.div`
-  margin: -70px 0 15px 0;
+  margin: -130px 0 15px 0;
   z-index: 24;
 `
 

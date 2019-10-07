@@ -13,7 +13,7 @@ const Footer = styled.footer`
 `
 
 const FooterRow = styled(Grid)`
-  margin: -70px auto 0px auto;
+  
 `
 
 export { Footer, FooterRow }

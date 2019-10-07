@@ -10,8 +10,28 @@ const _renderCell = (key, content) => {
   switch (true) {
     case key === 'row_0_cell_0':
       return (
-        <Grid container key={key}>
-          <h2>{content}</h2>
+        <Grid
+          container
+          style={{
+            position: 'relative',
+            height: '5em'
+          }}
+          key={key}
+        >
+          <h2 style={{
+            position: 'absolute',
+            backgroundColor: '#4078c0',
+            width: '100%',
+            height: '2em',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            boxShadow: '0px 2px 4px rgba(0,0,0,0.18)',
+            left: '-2em',
+            top: '0',
+            padding: '1em'
+          }}
+          >{content}</h2>
         </Grid>
       )
     case key.endsWith(0):
