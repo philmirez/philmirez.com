@@ -88,7 +88,7 @@ export default {
       display: `block`,
       position: `absolute`,
       bottom: 0,
-      color: `textMuted`,
+      color: `icon_blue`,
       px: [2, 3],
       py: [3, 4],
     },
